@@ -1,0 +1,453 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  width: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  background: #F6F6F6;
+}
+
+#bloc-page {
+  max-width: 1440px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-size: 1em;
+  font-weight: 100;
+  line-height: 1.7;
+}
+
+.cursive {
+  font-family: "Shrikhand", cursive;
+  font-size: 17px;
+}
+
+#reserver {
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  margin: 0px;
+  font-size: 16px;
+}
+
+#grey {
+  font-size: 15px;
+  color: #353535;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: white;
+}
+
+.texte {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+#restaurants p {
+  font-size: 0.8em;
+}
+
+#restaurants .dessus {
+  color: #139273;
+  font-weight: 600;
+  font-size: 0.7em;
+}
+
+figcaption {
+  line-height: 1.2;
+  color: black;
+}
+
+.coeur {
+  color: black;
+  font-size: 10px;
+  font-weight: 600;
+  font-size: 0.7em;
+}
+
+footer {
+  color: white;
+  font-size: 14px;
+}
+
+.icone-footer {
+  font-size: 11px;
+}
+
+footer a {
+  color: white;
+}
+
+.fleche {
+  font-size: 17px;
+  color: black;
+}
+
+.titre {
+  font-family: "Shrikhand", cursive;
+  font-weight: 900;
+  font-size: 23px;
+}
+
+.menu {
+  font-size: 12px;
+}
+
+.intitule {
+  font-size: 14px;
+}
+
+.rectangle p {
+  font-size: 11px;
+}
+
+.prix {
+  font-size: 13px;
+}
+
+button, #explorer {
+  border: 0;
+  background-image: linear-gradient(to bottom right, #ef74da, #a05adc);
+  border-radius: 40px;
+  width: 200px;
+  height: 50px;
+  margin-top: 25px;
+}
+
+button {
+  width: 190px;
+  margin-bottom: 60px;
+  margin-left: 20%;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+}
+
+.header img {
+  height: 64px;
+  width: 160px;
+}
+
+.header-restaurant, .header {
+  display: flex;
+  justify-content: center;
+  background: white;
+  width: 100%;
+}
+
+.fleche {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  height: 64px;
+}
+
+.header-restaurant img {
+  width: 44%;
+  margin-right: 28%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    width: 768px;
+  }
+}
+#localisation {
+  display: flex;
+  align-items: center;
+  background-color: #EAEAEA;
+  box-shadow: 0px -3px #d5d5d5;
+}
+
+#ic-local {
+  display: flex;
+  margin-left: 80px;
+  height: 50px;
+  align-items: center;
+  font-size: 14px;
+  color: #000;
+}
+
+#recherche {
+  height: 50px;
+  margin-left: -75%;
+  border: none;
+  font-size: 16px;
+  font-weight: bolder;
+  background-color: #EAEAEA;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #353535;
+  height: 190px;
+  padding-left: 15px;
+}
+
+.liste {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-top: -20px;
+}
+
+.icone-footer {
+  width: 20px;
+  margin-top: 2px;
+}
+
+footer p {
+  width: 91%;
+}
+
+.cursive {
+  margin-top: 20px;
+}
+
+#reserver {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#grey {
+  width: 94%;
+  padding-top: 10px;
+}
+
+h1 {
+  width: 270px;
+  margin: 30px 0px 0px 20px;
+}
+
+h2 {
+  padding-top: 35px;
+  margin-bottom: 20px;
+}
+
+#fonctionnement {
+  padding-bottom: 40px;
+  padding-left: 15px;
+  background-color: white;
+}
+
+#cartouches {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartouche {
+  display: flex;
+  width: 290px;
+  height: 70px;
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  margin-bottom: 15px;
+}
+
+.cercle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  margin-left: -10px;
+  margin-right: 20px;
+  color: white;
+}
+
+.icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 15px;
+  font-size: 13px;
+  color: #7e7e7e;
+}
+
+.texte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 210px;
+}
+
+.purple {
+  color: #9356DC;
+}
+
+.pink {
+  background-color: #F5edff;
+}
+
+#restaurants {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 15px;
+}
+
+liste-restaurants {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  width: 290px;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+figure .dessus {
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  margin-right: 10px;
+  right: 0;
+  top: 5%;
+  background-color: #99e2d0;
+  width: 30%;
+  border-radius: 2px;
+}
+
+figure img {
+  border-radius: 12px 12px 0px 0px;
+}
+
+figcaption {
+  width: 290px;
+  position: relative;
+  margin-top: -10px;
+  border-radius: 0px 0px 12px 12px;
+  box-shadow: 0px 0px 10px #d7d7d7;
+  padding: 10px;
+}
+
+.coeur {
+  z-index: 1;
+  position: absolute;
+  margin-left: 240px;
+  top: 30%;
+  font-size: 20px;
+}
+
+.image-plat {
+  width: 320px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image-plat img {
+  width: 100%;
+}
+
+#carte {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  background-color: #f6f6f6;
+}
+
+#texte-icone {
+  display: flex;
+  width: 320px;
+  position: absolute;
+  top: 38%;
+  height: 40px;
+  background-color: #f6f6f6;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.titre, #icone {
+  margin: 25px 0px 0px 20px;
+}
+
+#icone {
+  width: 50px;
+  margin-top: 25px;
+}
+
+#entrees, #plats, #desserts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 320px;
+  margin-left: 12px;
+}
+
+.menu {
+  border-bottom: #99e2d0 solid 3px;
+  width: 32px;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.rectangle {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  border-radius: 15px;
+  height: 65px;
+  margin-bottom: 15px;
+  width: 295px;
+  padding-left: 10px;
+}
+
+.intitule {
+  width: 290px;
+  height: 15px;
+  margin-top: 15px;
+}
+
+.rectangle p {
+  width: 250px;
+}
+
+.prix {
+  width: 30px;
+}
+
+.check {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

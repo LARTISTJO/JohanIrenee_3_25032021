@@ -1,0 +1,32 @@
+footer
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #353535;
+    height: 190px;
+    padding-left: 15px;
+}
+
+.liste
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-top: -20px;
+}
+
+.icone-footer
+{
+    width: 20px;
+    margin-top: 2px;
+}
+
+footer p
+{
+    width: 91%;    
+}
+
+.cursive
+{
+    margin-top: 20px;
+}

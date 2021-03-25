@@ -1,0 +1,129 @@
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    color: $colour-primary;
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+.cursive
+{
+    font-family: 'Shrikhand', cursive;
+    font-size: 17px;
+}
+
+#reserver
+{
+    line-height: 1.1;
+}
+
+h1
+{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h2
+{
+    font-size: 18px;
+}
+
+h3
+{
+    margin: 0px;
+    font-size: 16px;
+}
+
+#grey
+{
+    font-size: 15px;
+    color: #353535;
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: white; 
+}
+
+.texte
+{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#restaurants p
+{
+    font-size: 0.8em;
+}
+
+#restaurants .dessus
+{
+    color: #139273 ;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+
+figcaption
+{
+    line-height: 1.2;
+    color: black;
+}
+
+.coeur
+{
+    color: black ;
+    font-size: 10px;
+    font-weight: 600;
+    font-size: 0.7em;
+}
+
+footer
+{
+    color: white;
+    font-size: 14px;
+}
+
+.icone-footer
+{
+    font-size: 11px;
+}
+
+footer a
+{
+    color: white;
+}
+
+.fleche
+{
+    font-size: 17px;
+    color: black;
+}
+
+.titre
+{
+    font-family: 'Shrikhand', cursive;
+    font-weight: 900;
+    font-size: 23px;
+}
+
+.menu
+{
+    font-size: 12px;
+}
+
+.intitule
+{
+    font-size: 14px;
+}
+
+.rectangle p
+{
+    font-size: 11px;
+}
+
+.prix
+{
+    font-size: 13px;
+}

@@ -1,0 +1,268 @@
+@import "./utils/variables";
+
+@import "./base/base";
+@import "./base/typography";
+
+@import "./components/buttons";
+
+@import "./layout/header";
+@import "./layout/form";
+@import "./layout/footer";
+
+
+#reserver{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#grey
+{
+    width: 94%;
+    padding-top: 10px;
+}
+
+h1
+{
+    width: 270px;
+    margin: 30px 0px 0px 20px ;
+}
+
+h2
+{
+    padding-top : 35px;
+    margin-bottom: 20px;
+}
+#fonctionnement
+{
+    padding-bottom: 40px;
+    padding-left: 15px;
+    background-color: white;
+}
+
+#cartouches
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.cartouche
+{
+    display: flex;
+    width: 290px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: #f6f6f6;
+    margin-bottom: 15px;
+}
+
+.cercle
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: #9356DC;
+    margin-left: -10px;
+    margin-right: 20px;
+    color: white;
+}
+
+.icone
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 15px;
+    font-size: 13px;
+    color: #7e7e7e; 
+}
+
+.texte
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 210px;
+}
+
+.purple
+{
+    color: #9356DC;
+}
+
+.pink
+{
+    background-color: #F5edff;
+}
+
+#restaurants
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+}
+
+liste-restaurants
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+a
+{
+    text-decoration: none;
+}
+
+figure
+{
+    width: 290px;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+figure .dessus
+{
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    margin-right: 10px;
+    right: 0;
+    top: 5%;
+    background-color: #99e2d0;
+    width: 30%;
+    border-radius: 2px;
+}
+figure img
+{
+    border-radius: 12px 12px 0px 0px;
+}
+
+figcaption
+{
+    width: 290px;
+    position: relative;
+    margin-top: -10px;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0px 0px 10px #d7d7d7 ;
+    padding: 10px;
+}
+
+.coeur
+{
+    z-index: 1;
+    position: absolute;
+    margin-left: 240px;
+    top: 30%;
+    font-size: 20px;
+}
+
+.image-plat
+{
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image-plat img
+{
+    width: 100%;
+    
+}
+
+#carte
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    background-color: #f6f6f6;
+}
+
+#texte-icone
+{
+    display: flex;
+    width: 320px;
+    position: absolute;
+    top: 38%;
+    height: 40px;
+    background-color: #f6f6f6;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.titre, #icone
+{
+    margin: 25px 0px 0px 20px;
+}
+
+#icone
+{
+    width: 50px;
+    margin-top: 25px;
+}
+
+#entrees, #plats, #desserts
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 320px;
+    margin-left: 12px;
+}
+
+.menu
+{
+    border-bottom: #99e2d0 solid 3px;
+    width: 32px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.rectangle
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border-radius: 15px;
+    height: 65px;
+    margin-bottom: 15px;
+    width: 295px;
+    padding-left: 10px;
+}
+
+.intitule
+{
+    width: 290px;
+    height: 15px;
+    margin-top: 15px;
+}
+
+.rectangle p
+{
+    width: 250px;
+}
+
+.prix
+{
+    width: 30px;
+}
+
+.check
+{
+    display: none;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)
+{
+
+
+}
