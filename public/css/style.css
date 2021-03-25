@@ -394,7 +394,7 @@ figcaption {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 320px;
+  width: 100%;
   background-color: #f6f6f6;
 }
 
