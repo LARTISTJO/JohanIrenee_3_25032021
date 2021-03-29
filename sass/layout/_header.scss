@@ -1,16 +1,16 @@
-.header 
+header 
 {
     height: 60px;
     width: 100%;   
 }
 
-.header img
+header img
 {
     height: 64px;
     width: 160px;
 }
 
-.header-restaurant, .header
+.header-restaurant, header
 {
     display: flex;
     justify-content: center;
@@ -32,10 +32,23 @@
     margin-right: 28%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1440px)
+@media only screen and (min-width: 768px) 
 {
-    .header img
+    header img
     {
         width: 250px;
+    }
+
+    .header-restaurant
+    {
+        height: 70px;
+    }
+}
+
+@media only screen and (min-width: 1150px)
+{
+    .header-restaurant img
+    {
+        margin-right: 22%;
     }
 }

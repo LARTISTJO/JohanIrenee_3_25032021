@@ -35,6 +35,11 @@ body {
 h1 {
   font-size: 22px;
   font-weight: 700;
+  font-family: "Shrikhand", cursive;
+}
+
+.page-1 {
+  font-family: "Roboto";
 }
 
 h2 {
@@ -124,38 +129,40 @@ footer a {
   font-size: 13px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
+@media only screen and (min-width: 768px) {
   h2, .cursive {
     font-size: 22px;
   }
+
+  .menu {
+    font-size: 21px;
+  }
 }
 button {
-  width: 190px;
-  margin-bottom: 60px;
-  margin-left: 20%;
-}
-
-button, #explorer {
   border: 0;
   background-image: linear-gradient(to bottom right, #ef74da, #a05adc);
   border-radius: 40px;
   width: 200px;
   height: 50px;
   margin-top: 25px;
-  margin-left: 0%;
+  margin-bottom: 60px;
 }
 
-.header {
+#explorer {
+  width: 190px;
+}
+
+header {
   height: 60px;
   width: 100%;
 }
 
-.header img {
+header img {
   height: 64px;
   width: 160px;
 }
 
-.header-restaurant, .header {
+.header-restaurant, header {
   display: flex;
   justify-content: center;
   background: white;
@@ -174,9 +181,18 @@ button, #explorer {
   margin-right: 28%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
-  .header img {
+@media only screen and (min-width: 768px) {
+  header img {
     width: 250px;
+  }
+
+  .header-restaurant {
+    height: 70px;
+  }
+}
+@media only screen and (min-width: 1150px) {
+  .header-restaurant img {
+    margin-right: 22%;
   }
 }
 #localisation {
@@ -213,7 +229,7 @@ button, #explorer {
     margin-left: 40%;
   }
 }
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 1025px) {
   #ic-local {
     margin-left: 42%;
   }
@@ -246,7 +262,7 @@ footer p {
   margin-top: 20px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
+@media only screen and (min-width: 768px) {
   footer p {
     width: 23%;
   }
@@ -263,7 +279,7 @@ footer p {
   padding-top: 10px;
 }
 
-h1 {
+.page-1 {
   width: 84%;
   margin-top: 30px;
 }
@@ -289,7 +305,7 @@ main {
 #cartouches {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .cartouche {
@@ -351,7 +367,7 @@ main {
 #liste-restaurants {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 a {
@@ -381,10 +397,12 @@ figure img {
   border-radius: 12px 12px 0px 0px;
 }
 
-figcaption {
+.index {
+  display: flex;
+  flex-wrap: wrap;
   width: 290px;
   position: relative;
-  margin-top: -10px;
+  margin-top: -9px;
   border-radius: 0px 0px 12px 12px;
   box-shadow: 0px 0px 10px #d7d7d7;
   padding: 10px;
@@ -410,48 +428,44 @@ figcaption {
 }
 
 #carte {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-  background-color: #f6f6f6;
+  justify-content: space-evenly;
 }
 
-#texte-icone {
+figcaption {
   display: flex;
   width: 320px;
   position: absolute;
-  top: 42%;
-  height: 40px;
+  top: 86%;
   background-color: #f6f6f6;
   border-radius: 30px 30px 0px 0px;
+  padding-top: 25px;
 }
 
-.titre, #icone {
-  margin: 25px 0px 0px 20px;
+h1 {
+  margin-left: 15px;
 }
 
 #icone {
   width: 50px;
-  margin-top: 25px;
 }
 
 #entrees, #plats, #desserts {
   display: flex;
   flex-wrap: wrap;
   width: 320px;
+  justify-content: flex-start;
 }
 
 .rectangles {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .menu {
   border-bottom: #99e2d0 solid 3px;
   width: 32px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   margin-left: 15px;
   padding-left: 0px;
 }
@@ -485,7 +499,7 @@ figcaption {
   display: none;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1440px) {
+@media only screen and (min-width: 500px) {
   h2 {
     display: flex;
     justify-content: center;
@@ -496,20 +510,31 @@ figcaption {
     padding-bottom: 20px;
   }
 
-  #cartouches {
-    justify-content: space-around;
+  .cartouche {
+    margin-right: 15px;
+  }
+
+  a {
+    margin-right: 10px;
   }
 
   #restaurants {
     padding: 0px;
   }
 
-  #liste-restaurants {
-    justify-content: space-evenly;
+  #entrees, #plats, #desserts {
+    width: 100%;
+    justify-content: center;
   }
 
-  #texte-icone {
-    top: 39%;
+  .rectangle {
+    margin-right: 15px;
+  }
+
+  .menu {
+    border-bottom: #99e2d0 solid 3px;
+    width: 100px;
+    margin-left: 0px;
   }
 }
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
