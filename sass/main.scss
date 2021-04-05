@@ -374,13 +374,13 @@ h1
     top: 20%;
     color: $colour-vert;
     font-size: 170px;
-    animation: rotate 0.7s linear infinite alternate;
+    animation: rotate 1.2s linear infinite alternate;
   }
   
-  .fa-snowflake
+  .fa-lemon
   {
-      color: $colour-white;
-      animation: rotate 0.4s ease-in-out infinite alternate;
+      color: #d3d3d3;
+      animation: rotate 0.7s ease-in-out infinite alternate-reverse;
   }
 
 

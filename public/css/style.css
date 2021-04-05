@@ -635,12 +635,12 @@ h1 {
   top: 20%;
   color: #99e2d0;
   font-size: 170px;
-  animation: rotate 0.7s linear infinite alternate;
+  animation: rotate 1.2s linear infinite alternate;
 }
 
-.fa-snowflake {
-  color: white;
-  animation: rotate 0.4s ease-in-out infinite alternate;
+.fa-lemon {
+  color: #d3d3d3;
+  animation: rotate 0.7s ease-in-out infinite alternate-reverse;
 }
 
 @media only screen and (min-width: 500px) {
