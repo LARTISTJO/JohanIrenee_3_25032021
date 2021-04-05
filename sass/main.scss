@@ -1,4 +1,7 @@
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/keyframes";
+
 
 @import "./base/base";
 @import "./base/typography";
@@ -48,7 +51,7 @@ main
     display: flex;
     flex-wrap: wrap;
     padding-bottom: 40px;
-    background-color: white;
+    background-color: $colour-white;
 }
 
 #cartouches
@@ -64,7 +67,7 @@ main
     width: 290px;
     height: 70px;
     border-radius: 20px;
-    background-color: #f6f6f6;
+    background-color:$colour-secondary;
     margin-bottom: 20px;
 }
 
@@ -78,10 +81,10 @@ main
     height: 20px;
     font-size: 12px;
     border-radius: 50%;
-    background-color: #9356DC;
+    background-color: $colour-violet;
     margin-left: -10px;
     margin-right: 20px;
-    color: white;
+    color: $colour-white;
 }
 
 .icone
@@ -106,10 +109,10 @@ main
 
 .purple
 {
-    color: #9356DC;
+    color: $colour-violet;
 }
 
-.pink
+.purple-light
 {
     background-color: #F5edff;
 }
@@ -143,16 +146,15 @@ figure
 
 figure .dessus
 {
-    z-index: 1;
     position: absolute;
     text-align: center;
     margin-right: 10px;
     right: 0;
     top: 5%;
-    background-color: #99e2d0;
-    width: 30%;
-    border-radius: 2px;
+    background-color: $colour-vert;
+    width: 22%;
 }
+
 figure img
 {
     border-radius: 12px 12px 0px 0px;
@@ -167,24 +169,36 @@ figure img
     margin-top: -9px;
     border-radius: 0px 0px 12px 12px;
     box-shadow: 0px 0px 10px #d7d7d7 ;
-    padding: 10px;
+    padding: 13px 10px;
+}
+
+.index h3, p 
+{
+    width: 240px;
 }
 
 .coeur
 {
-    z-index: 1;
-    position: absolute;
-    margin-left: 240px;
-    top: 30%;
-    font-size: 20px;
+    font-size: 22px;
+    width: fit-content;
+    margin-top: -15px;
+    &:hover .color 
+    {
+    @include heart-hover;
+    }
+}
+
+.color
+{
+    @include heart;
+    left: 249px;
+    font-size: 26px;
+    top: 15px;
 }
 
 .image-plat
 {
-    width: 320px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
 }
 
 .image-plat img
@@ -201,10 +215,9 @@ figure img
 figcaption
 {
     display: flex;
-    width: 320px;
     position: absolute;
     top: 86%;
-    background-color: #f6f6f6;
+    background-color: $colour-secondary;
     border-radius: 30px 30px 0px 0px;
     padding-top: 25px;
 }
@@ -217,6 +230,19 @@ h1
 #icone
 {
     width: 50px;
+    position: relative;
+    &:hover .colors
+    {
+        @include heart-hover;
+    }
+}
+
+.colors
+{
+    @include heart;
+    font-size: 22px;
+    left: -1px;
+    top: -1px;
 }
 
 
@@ -237,7 +263,7 @@ h1
 
 .menu
 {
-    border-bottom: #99e2d0 solid 3px;
+    border-bottom: $colour-vert solid 3px;
     width: 32px;
     margin-bottom: 15px;
     margin-left: 15px;
@@ -247,36 +273,110 @@ h1
 .rectangle
 {
     display: flex;
-    flex-wrap: wrap;
-    background-color: white;
+    overflow: hidden;
+    position: relative;
+    background-color: $colour-white;
     border-radius: 15px;
-    height: 65px;
+    height: 60px;
     margin-bottom: 15px;
     width: 295px;
     padding-left: 10px;
+    &:hover .check
+    {
+        width: 60px;
+        transform: rotate(360deg);
+        > .fa-check-circle 
+        {
+            opacity: 1;
+        }
+    }
 }
+
 
 .intitule
 {
-    width: 290px;
-    height: 15px;
-    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    margin-top: 8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.rectangle p
+.rectangle p , h3
 {
-    width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .prix
 {
-    width: 30px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 30px 15px 13px 7px;
+    width: 50px;
 }
+
 
 .check
 {
-    display: none;
+    display: flex;
+    align-items: center;
+    background-color: $colour-vert;
+    color: $colour-white;
+    width: 0px;
+    font-size: 18px;
+    border-radius: 0px 10px 10px 0px;
+    transition: width 700ms ease-in-out, transform 700ms;
 }
+    
+
+.check i
+{
+    display: flex;
+    justify-content: center;
+}
+
+#entrees
+{
+    animation: fadein 1500ms ease;
+}
+
+#plats
+{
+    animation: fadein 3000ms ease;
+}
+
+#desserts
+{
+    animation: fadein 4500ms ease;
+}
+
+#loader
+{
+    background:-webkit-linear-gradient(#ef74da, $colour-violet, #238475, $colour-vert);
+    width: 100%;
+    height: 100%;
+    font-family: Shrikhand, sans-serif;
+    vertical-align: middle;
+    text-align: center;
+    position: fixed;
+    pointer-events: none;
+    z-index: 2;
+    animation: loading 1s ease-in-out 3s forwards;
+  }
+
+  #loader-spinner
+  {
+    vertical-align: middle;
+    position: absolute;
+    top:50%;
+    color: #eaeaea;
+    font-size: 100px;
+    animation: rotate 1s linear infinite;
+  }
+  
 
 
 @media only screen and (min-width: 500px) 
@@ -309,22 +409,26 @@ h1
     }
     
     #entrees, #plats, #desserts
-{
-    width: 100%;
-    justify-content: center;
-}
+    {
+        width: 100%;
+        justify-content: center;
+    }
 
-.rectangle
-{
-    margin-right: 15px;
-}
+    .rectangle
+    {
+        margin-right: 15px;
+    }
 
-.menu
-{
-    border-bottom: #99e2d0 solid 3px;
-    width: 100px;
-    margin-left: 0px;
-}
+    .menu
+    {
+        width: 100px;
+        margin-left: 0px;
+    }
+
+    figcaption
+    {
+        top: 94%;
+    }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px)

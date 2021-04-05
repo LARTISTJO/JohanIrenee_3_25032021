@@ -38,7 +38,7 @@ h2
 h3
 {
     margin: 0px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
 #grey
@@ -50,7 +50,7 @@ h3
 button {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
-    color: white; 
+    color: $colour-white; 
 }
 
 .texte
@@ -74,12 +74,12 @@ button {
 figcaption
 {
     line-height: 1.2;
-    color: black;
+    color: $colour-primary;
 }
 
 .coeur
 {
-    color: black ;
+    color: $colour-primary;
     font-size: 10px;
     font-weight: 600;
     font-size: 0.7em;
@@ -104,7 +104,7 @@ footer a
 .fleche
 {
     font-size: 17px;
-    color: black;
+    color: $colour-primary;
 }
 
 .titre
@@ -119,20 +119,17 @@ footer a
     font-size: 12px;
 }
 
-.intitule
-{
-    font-size: 14px;
-}
-
 .rectangle p
 {
-    font-size: 11px;
+    font-size: 12px;
 }
 
 .prix
 {
     font-size: 13px;
+    font-weight: bold;
 }
+
 
 @media only screen and (min-width: 768px)
 {
