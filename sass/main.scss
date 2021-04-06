@@ -64,11 +64,12 @@ main
 .cartouche
 {
     display: flex;
-    width: 290px;
+    width: 90%;
     height: 70px;
     border-radius: 20px;
     background-color:$colour-secondary;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .cercle
@@ -134,12 +135,11 @@ main
 a
 {
     text-decoration: none;
-    width: 290px;
+    width: 90%;
 }
 
 figure
 {
-    width: 290px;
     position: relative;
     margin-bottom: 20px;
 }
@@ -164,7 +164,7 @@ figure img
 {
     display: flex;
     flex-wrap: wrap;
-    width: 290px;
+    width: 100%;
     position: relative;
     margin-top: -9px;
     border-radius: 0px 0px 12px 12px;
@@ -174,7 +174,7 @@ figure img
 
 .index h3, p 
 {
-    width: 240px;
+    width: 90%;
 }
 
 .coeur
@@ -250,7 +250,7 @@ h1
 {
     display: flex;
     flex-wrap: wrap;
-    width: 320px;
+    width: 100%;
     justify-content: flex-start;
 }
 
@@ -266,7 +266,7 @@ h1
     border-bottom: $colour-vert solid 3px;
     width: 32px;
     margin-bottom: 15px;
-    margin-left: 15px;
+    margin-left: 5%;
     padding-left: 0px;
 }
 
@@ -279,7 +279,7 @@ h1
     border-radius: 15px;
     height: 60px;
     margin-bottom: 15px;
-    width: 295px;
+    width: 90%;
     padding-left: 10px;
     &:hover .check
     {
@@ -297,7 +297,7 @@ h1
 {
     display: flex;
     flex-direction: column;
-    width: 240px;
+    width: 81%;
     margin-top: 8px;
     white-space: nowrap;
     overflow: hidden;
@@ -315,7 +315,7 @@ h1
     display: flex;
     justify-content: flex-end;
     padding: 30px 15px 13px 7px;
-    width: 50px;
+    width: 17%;
 }
 
 
@@ -401,6 +401,12 @@ h1
     .cartouche
     {
         margin-right: 15px;
+        width: 290px;
+    }
+
+    #restaurants a
+    {
+        width: 290px;
     }
 
     a 
@@ -413,6 +419,21 @@ h1
         padding: 0px;
     }
     
+    .rectangle
+    {
+        width: 295px;
+    }
+
+    .intitule
+    {
+        width: 240px;
+    }
+
+    .prix
+    {
+        width: 50px;
+    }
+
     #entrees, #plats, #desserts
     {
         width: 100%;
