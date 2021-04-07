@@ -174,14 +174,19 @@ figure img
 
 .index h3, p 
 {
-    width: 90%;
+    width: 87%;
 }
 
 .coeur
 {
-    font-size: 22px;
-    width: fit-content;
+    font-size: 23px;
+    width: 25px;
+    height: 25px;
     margin-top: -15px;
+    &:hover i
+    {
+        @include heart;
+    }
     &:hover .color 
     {
     @include heart-hover;
@@ -191,9 +196,11 @@ figure img
 .color
 {
     @include heart;
-    left: 249px;
-    font-size: 26px;
-    top: 15px;
+    left: 245px;
+    top: 17px;
+    position: absolute;
+    width: 0px;
+    @include transition;
 }
 
 .image-plat
@@ -231,6 +238,7 @@ h1
 {
     width: 50px;
     position: relative;
+    font-size: 21px;
     &:hover .colors
     {
         @include heart-hover;
@@ -242,7 +250,7 @@ h1
     @include heart;
     font-size: 22px;
     left: -1px;
-    top: -1px;
+    top: 1px;
 }
 
 
@@ -284,9 +292,10 @@ h1
     &:hover .check
     {
         width: 60px;
-        transform: rotate(360deg);
+        transform: translate;
         > .fa-check-circle 
         {
+            transform: rotate(360deg);
             opacity: 1;
         }
     }
@@ -297,7 +306,7 @@ h1
 {
     display: flex;
     flex-direction: column;
-    width: 81%;
+    width: 82%;
     margin-top: 8px;
     white-space: nowrap;
     overflow: hidden;
@@ -308,6 +317,7 @@ h1
 {
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 100%;
 }
 
 .prix
@@ -328,7 +338,7 @@ h1
     width: 0px;
     font-size: 18px;
     border-radius: 0px 10px 10px 0px;
-    transition: width 700ms ease-in-out, transform 700ms;
+    @include transition;
 }
     
 
@@ -336,21 +346,26 @@ h1
 {
     display: flex;
     justify-content: center;
+    @include transition;
 }
 
 #entrees
 {
-    animation: fadein 1500ms ease;
+    
+}
+#entrees
+{
+    animation: fadein 1500ms ease, rebond 1.5s ease 1s normal;
 }
 
 #plats
 {
-    animation: fadein 3000ms ease;
+    animation: fadein 3000ms ease, rebond 1.5s ease 2.5s normal;
 }
 
 #desserts
 {
-    animation: fadein 4500ms ease;
+    animation: fadein 4500ms ease, rebond 1.5s ease 3.5s normal;
 }
 
 #loader

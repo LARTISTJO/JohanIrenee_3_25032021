@@ -1,6 +1,7 @@
 @keyframes fadein {
   0% {
     opacity: 0;
+    translateY: 0px;
   }
   19% {
     opacity: 0.15;
@@ -10,9 +11,19 @@
   }
   76% {
     opacity: 0.4;
+    translateY: -50px;
   }
   100% {
     opacity: 1;
+    translateY: 0px;
+  }
+}
+@keyframes rebond {
+  0% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
 @keyframes loading {
@@ -241,26 +252,32 @@ header img {
 }
 #localisation {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
   background-color: #EAEAEA;
   box-shadow: 0px -3px #d5d5d5;
 }
 
-#ic-local {
+#center {
   display: flex;
-  margin-left: 25%;
-  height: 50px;
-  align-items: center;
+  width: fit-content;
+}
+
+#ic-local {
+  width: fit-content;
   font-size: 14px;
-  color: #000;
+  margin-left: 15px;
+  margin-top: 2px;
 }
 
 #recherche {
-  height: 50px;
-  margin-left: -75%;
+  width: 150px;
   border: none;
   font-size: 16px;
   font-weight: bolder;
   background-color: #EAEAEA;
+  margin-left: 15px;
 }
 
 ::placeholder {
@@ -268,16 +285,6 @@ header img {
   opacity: 1;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  #ic-local {
-    margin-left: 40%;
-  }
-}
-@media only screen and (min-width: 1025px) {
-  #ic-local {
-    margin-left: 42%;
-  }
-}
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -299,16 +306,20 @@ footer {
 }
 
 footer p {
-  width: 91%;
+  width: 92%;
 }
 
 .cursive {
   margin-top: 20px;
 }
 
-@media only screen and (min-width: 768px) {
+footer a {
+  width: 21%;
+}
+
+@media only screen and (min-width: 500px) {
   footer p {
-    width: 23%;
+    width: 24%;
   }
 }
 #reserver {
@@ -451,16 +462,22 @@ figure img {
 }
 
 .index h3, p {
-  width: 90%;
+  width: 87%;
 }
 
 .coeur {
-  font-size: 22px;
-  width: fit-content;
+  font-size: 23px;
+  width: 25px;
+  height: 25px;
   margin-top: -15px;
 }
+.coeur:hover i {
+  background-image: linear-gradient(#a05adc, #ef74da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .coeur:hover .color {
-  width: 100%;
+  width: 27px;
 }
 .coeur:hover .color > .fa-heart {
   opacity: 1;
@@ -470,12 +487,11 @@ figure img {
   background-image: linear-gradient(#a05adc, #ef74da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  left: 245px;
+  top: 17px;
   position: absolute;
   width: 0px;
-  transition: width 3s ease, transform 3s;
-  left: 249px;
-  font-size: 26px;
-  top: 15px;
+  transition: width 1.2s ease-in-out, transform 0.5s;
 }
 
 .image-plat {
@@ -506,9 +522,10 @@ h1 {
 #icone {
   width: 50px;
   position: relative;
+  font-size: 21px;
 }
 #icone:hover .colors {
-  width: 100%;
+  width: 27px;
 }
 #icone:hover .colors > .fa-heart {
   opacity: 1;
@@ -518,12 +535,9 @@ h1 {
   background-image: linear-gradient(#a05adc, #ef74da);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  position: absolute;
-  width: 0px;
-  transition: width 3s ease, transform 3s;
   font-size: 22px;
   left: -1px;
-  top: -1px;
+  top: 1px;
 }
 
 #entrees, #plats, #desserts {
@@ -560,16 +574,17 @@ h1 {
 }
 .rectangle:hover .check {
   width: 60px;
-  transform: rotate(360deg);
+  transform: translate;
 }
 .rectangle:hover .check > .fa-check-circle {
+  transform: rotate(360deg);
   opacity: 1;
 }
 
 .intitule {
   display: flex;
   flex-direction: column;
-  width: 81%;
+  width: 82%;
   margin-top: 8px;
   white-space: nowrap;
   overflow: hidden;
@@ -579,6 +594,7 @@ h1 {
 .rectangle p, h3 {
   overflow: hidden;
   text-overflow: ellipsis;
+  width: 100%;
 }
 
 .prix {
@@ -596,24 +612,25 @@ h1 {
   width: 0px;
   font-size: 18px;
   border-radius: 0px 10px 10px 0px;
-  transition: width 700ms ease-in-out, transform 700ms;
+  transition: width 1.2s ease-in-out, transform 0.5s;
 }
 
 .check i {
   display: flex;
   justify-content: center;
+  transition: width 1.2s ease-in-out, transform 0.5s;
 }
 
 #entrees {
-  animation: fadein 1500ms ease;
+  animation: fadein 1500ms ease, rebond 1.5s ease 1s normal;
 }
 
 #plats {
-  animation: fadein 3000ms ease;
+  animation: fadein 3000ms ease, rebond 1.5s ease 2.5s normal;
 }
 
 #desserts {
-  animation: fadein 4500ms ease;
+  animation: fadein 4500ms ease, rebond 1.5s ease 3.5s normal;
 }
 
 #loader {

@@ -3,16 +3,18 @@
     background-image: linear-gradient(#a05adc,#ef74da);
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
-    position: absolute;
-    width: 0px;
-    transition: width 3s ease, transform 3s;
 }
 
 @mixin heart-hover
 {
-    width: 100%;
+    width: 27px;
     > .fa-heart 
     {
         opacity: 1;
     }
 } 
+
+@mixin transition
+{
+    transition: width 1.2s ease-in-out, transform 0.5s;
+}

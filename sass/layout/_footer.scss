@@ -23,7 +23,7 @@ footer
 
 footer p
 {
-    width: 91%;    
+    width: 92%;    
 }
 
 .cursive
@@ -31,10 +31,15 @@ footer p
     margin-top: 20px;
 }
 
-@media only screen and (min-width: 768px) 
+footer a 
+{
+    width: 21%;
+}
+
+@media only screen and (min-width: 500px) 
 {
     footer p 
     {
-        width: 23%;
+        width: 24%;
     }
 }
