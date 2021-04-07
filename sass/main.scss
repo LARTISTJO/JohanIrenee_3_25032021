@@ -239,6 +239,10 @@ h1
     width: 50px;
     position: relative;
     font-size: 21px;
+    &:hover i
+    {
+        @include heart;
+    }
     &:hover .colors
     {
         @include heart-hover;
@@ -251,6 +255,9 @@ h1
     font-size: 22px;
     left: -1px;
     top: 1px;
+    position: absolute;
+    width: 0px;
+    @include transition;
 }
 
 
@@ -292,7 +299,6 @@ h1
     &:hover .check
     {
         width: 60px;
-        transform: translate;
         > .fa-check-circle 
         {
             transform: rotate(360deg);
