@@ -361,17 +361,17 @@ h1
 }
 #entrees
 {
-    animation: fadein 1500ms ease, rebond 1.5s ease 1s normal;
+    animation: fadein 1500ms ease, rebond 1.5s ease normal;
 }
 
 #plats
 {
-    animation: fadein 3000ms ease, rebond 1.5s ease 2.5s normal;
+    animation: fadein 3000ms ease, rebond 1.5s ease 1.5s normal;
 }
 
 #desserts
 {
-    animation: fadein 4500ms ease, rebond 1.5s ease 3.5s normal;
+    animation: fadein 4500ms ease, rebond 1.5s ease 3s normal;
 }
 
 #loader
