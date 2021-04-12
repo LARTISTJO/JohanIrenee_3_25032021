@@ -210,8 +210,12 @@ figure img
 
 .image-plat img
 {
-    width: 100%;
-    
+    width: 100%; 
+}
+
+.queries 
+{
+    display: none;
 }
 
 #carte
@@ -357,10 +361,6 @@ h1
 
 #entrees
 {
-    
-}
-#entrees
-{
     animation: fadein 1500ms ease, rebond 1.5s ease normal;
 }
 
@@ -394,7 +394,7 @@ h1
     position: absolute;
     top: 15%;
     color: $colour-vert;
-    font-size: 160px;
+    font-size: 100px;
     animation: rotate 1.4s linear infinite ;
   }
   
@@ -475,6 +475,16 @@ h1
     figcaption
     {
         top: 94%;
+    }
+
+    .smartphone
+    {
+        display: none;
+    }
+
+    .queries
+    {
+        display: flex;
     }
 }
 
