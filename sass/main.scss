@@ -271,6 +271,7 @@ h1
     flex-wrap: wrap;
     width: 100%;
     justify-content: flex-start;
+    opacity: 0;
 }
 
 .rectangles
@@ -361,17 +362,19 @@ h1
 
 #entrees
 {
-    animation: fadein 1500ms ease, rebond 1.5s ease normal;
+    animation: fadein 1500ms ease normal forwards;
 }
 
 #plats
 {
-    animation: fadein 3000ms ease, rebond 1.5s ease 1.5s normal;
+    animation: fadein 1500ms ease normal forwards;
+    animation-delay: 1500ms;
 }
 
 #desserts
 {
-    animation: fadein 4500ms ease, rebond 1.5s ease 3s normal;
+    animation: fadein 1500ms ease normal forwards;
+    animation-delay: 3000ms;
 }
 
 #loader

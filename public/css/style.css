@@ -1,6 +1,7 @@
 @keyframes fadein {
   0% {
     opacity: 0;
+    margin-top: 30px;
   }
   19% {
     opacity: 0.15;
@@ -13,14 +14,7 @@
   }
   100% {
     opacity: 1;
-  }
-}
-@keyframes rebond {
-  0% {
-    transform: translateY(7px);
-  }
-  100% {
-    transform: translateY(0px);
+    margin-top: 0px;
   }
 }
 @keyframes loading {
@@ -488,7 +482,7 @@ figure img {
   top: 17px;
   position: absolute;
   width: 0px;
-  transition: width 0.7s ease-in-out, transform 0.5s;
+  transition: width 0.5s ease, transform 0.3s;
 }
 
 .image-plat {
@@ -546,7 +540,7 @@ h1 {
   top: 1px;
   position: absolute;
   width: 0px;
-  transition: width 0.7s ease-in-out, transform 0.5s;
+  transition: width 0.5s ease, transform 0.3s;
 }
 
 #entrees, #plats, #desserts {
@@ -554,6 +548,7 @@ h1 {
   flex-wrap: wrap;
   width: 100%;
   justify-content: flex-start;
+  opacity: 0;
 }
 
 .rectangles {
@@ -620,25 +615,27 @@ h1 {
   width: 0px;
   font-size: 18px;
   border-radius: 0px 10px 10px 0px;
-  transition: width 0.7s ease-in-out, transform 0.5s;
+  transition: width 0.5s ease, transform 0.3s;
 }
 
 .check i {
   display: flex;
   justify-content: center;
-  transition: width 0.7s ease-in-out, transform 0.5s;
+  transition: width 0.5s ease, transform 0.3s;
 }
 
 #entrees {
-  animation: fadein 1500ms ease, rebond 1.5s ease normal;
+  animation: fadein 1500ms ease normal forwards;
 }
 
 #plats {
-  animation: fadein 3000ms ease, rebond 1.5s ease 1.5s normal;
+  animation: fadein 1500ms ease normal forwards;
+  animation-delay: 1500ms;
 }
 
 #desserts {
-  animation: fadein 4500ms ease, rebond 1.5s ease 3s normal;
+  animation: fadein 1500ms ease normal forwards;
+  animation-delay: 3000ms;
 }
 
 #loader {
