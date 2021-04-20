@@ -92,7 +92,11 @@ h2 {
 
 h3 {
   margin: 0px;
-  font-size: 17px;
+  font-size: 14px;
+}
+
+.index p {
+  font-size: 0.9em;
 }
 
 #grey {
